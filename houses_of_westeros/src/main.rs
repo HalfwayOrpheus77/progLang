@@ -1,15 +1,17 @@
-// First, I will define a structure for Character
+// First, I will define a structure Character
 struct Character {
     name: String,
     house: House,
 }
 
-// Define an enumeration for a House
+// Next, I will define an enumeration for the different Houses
+// Able to take in different types. We will only be using String
+// and None (null)
 enum House {
     Stark,
     Lannister,
     Targaryen,
-    None,
+    None, // Night King
 }
 
 // Implement a method for the Character structure
@@ -20,7 +22,7 @@ impl Character {
             house,
         }
     }
-
+// Matching House to String (name of each house)
     fn print(&self) {
         match self.house {
             House::Stark => println!("{} of House Stark", self.name),
@@ -33,10 +35,10 @@ impl Character {
 
 // Main function
 fn main() {
-    let jon = Character::new("Jon Snow", House::Stark);
-    let cersei = Character::new("Cersei", House::Lannister);
-    let daenerys = Character::new("Daenerys", House::Targaryen);
-    let night_king = Character::new("Night King", House::None);
+    let jon = Character::new("Jon Snow", House::Stark); // Bastard of the Starks, legend
+    let cersei = Character::new("Cersei", House::Lannister); // Teeth clencher, scary woman
+    let daenerys = Character::new("Daenerys", House::Targaryen); // Smokin hot Targaryen babe
+    let night_king = Character::new("Night King", House::None); //  Leader of the White Walkers
 
     jon.print();
     cersei.print();
