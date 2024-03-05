@@ -35,10 +35,10 @@ impl Character {
 
 // Main function
 fn main() {
-    let jon = Character::new("Jon Snow", House::Stark); // Bastard of the Starks
-    let cersei = Character::new("Cersei", House::Lannister); // 
+    let jon = Character::new("Jon Snow", House::Stark); // Bastard of the Starks, legend
+    let cersei = Character::new("Cersei", House::Lannister); // Teeth clencher, scary woman
     let daenerys = Character::new("Daenerys", House::Targaryen); // Smokin hot Targaryen babe
-    let night_king = Character::new("Night King", House::None); //  Leader of the Wight Walkers
+    let night_king = Character::new("Night King", House::None); //  Leader of the White Walkers
 
     jon.print();
     cersei.print();
