@@ -1,11 +1,9 @@
-const s = require('sicp');
-const { list, head, tail } = s.pairs;
+const { list, head, tail } = require('sicp');
 
-// Create the nested list
-const nestedList = list(1, list(2, list(3, list(4, list(5, list(6, 7))))));
+// Creation of nested list
+let nestedList = list(1, list(2, list(3, list(4, list(5, list(6, 7))))));
 
-// Extract the value '7'
-const value = head(tail(tail(tail(tail(tail(nestedList))))));
+// Extraction of said value 7 from nested list
+let value = head(tail(head(tail(head(tail(head(tail(head(tail(nestedList))))))))));
 
 console.log(value);
-
