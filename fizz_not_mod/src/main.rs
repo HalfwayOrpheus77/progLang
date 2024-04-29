@@ -8,7 +8,7 @@ fn main() {
         let mut buzz = 0;
         let mut baz = 0;
         // Iterates from 1-->100, adds 1 to each
-             for i in 1..=100 {
+             for i in 1..=1000 {
                  fizz += 1;
                  buzz += 1;
                  baz += 1;
